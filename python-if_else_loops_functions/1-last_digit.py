@@ -8,8 +8,7 @@ if number < 0:
     if num == 0:
         print(f"Last digit of {number * -1} is {num} and is 0")
     else:
-        print(f"Last digit of {number * -1} is {num * -1}", end="")
-        print("and is less than 6 and not 0")
+        print(f"Last digit of {number * -1} is {num * -1} and is less than 6 and not 0")
 else:
     num = number % 10
     if num > 5:
