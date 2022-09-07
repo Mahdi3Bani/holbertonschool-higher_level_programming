@@ -3,4 +3,4 @@
 
 def uppercase(str):
     for i in str:
-        print("{}".format(chr(ord(str) + 32)))
+        print("{}".format(chr(ord(str[i]) + 32)), end='')
