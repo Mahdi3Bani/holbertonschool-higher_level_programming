@@ -5,6 +5,8 @@ def pow(a, b):
     p = 1
     if b < 0:
         l = b * -1
+    else:
+        l = b
     for i in range(1, l + 1):
         p = p * a
     if b < 0:
