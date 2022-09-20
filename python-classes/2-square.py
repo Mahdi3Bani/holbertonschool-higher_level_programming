@@ -2,9 +2,6 @@
 """"useless class"""
 
 
-from typing import Type
-
-
 class Square:
     """"square class """
 
