@@ -2,9 +2,6 @@
 """"useless class"""
 
 
-from turtle import position
-
-
 class Square:
     """"square class """
 
