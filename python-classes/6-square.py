@@ -2,6 +2,9 @@
 """"useless class"""
 
 
+from turtle import pos, position
+
+
 class Square:
     """"square class """
 
@@ -27,7 +30,7 @@ class Square:
 
     @position.setter
     def position(self, value):
-        if not isinstance(value, tuple) or not isinstance(value[0], int) or not isinstance(value[1], int) or len(value[1]) != 2 or (value[1] < 0 and value[0] < 0):
+        if not isinstance(position, tuple) or not isinstance(position[0], int) or not isinstance(position[1], int) or len(position) != 2 or (position[1] < 0 and position[0] < 0):
             raise TypeError('position must be a tuple of 2 positive integers')
         self.__position = value
 
