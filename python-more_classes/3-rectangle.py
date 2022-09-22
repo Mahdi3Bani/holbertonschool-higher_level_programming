@@ -16,7 +16,7 @@ class Rectangle:
         for i in range(self.height):
             for j in range(self.width):
                 hash = hash + "#"
-            hash = "\n"
+            hash += "\n"
         return hash
 
     @property
