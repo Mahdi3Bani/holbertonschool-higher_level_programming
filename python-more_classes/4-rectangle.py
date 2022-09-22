@@ -2,7 +2,6 @@
 """" class"""
 
 
-
 class Rectangle:
     """"Rectangle class """
 
@@ -19,9 +18,9 @@ class Rectangle:
                 hash = hash + "#"
             hash += "\n"
         return hash[0:len(hash) - 1]
-    
+
     def __repr__(self):
-        return "Rectangle(" + str(self.width) + "," + str(self.height) + ")"
+        return "Rectangle(" + str(self.width) + ", " + str(self.height) + ")"
 
     @property
     def width(self):
