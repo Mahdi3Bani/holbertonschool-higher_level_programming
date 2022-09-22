@@ -2,8 +2,6 @@
 """" class"""
 
 
-from turtle import width
-
 
 class Rectangle:
     """"Rectangle class """
