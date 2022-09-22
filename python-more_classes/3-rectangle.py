@@ -10,14 +10,14 @@ class Rectangle:
         self.height = height
 
     def __str__(self):
-        if self.width == 0 or self.height == 0:
-            return 0
         hash = ""
+        if self.width == 0 or self.height == 0:
+            return hash
         for i in range(self.height):
             for j in range(self.width):
                 hash = hash + "#"
             hash += "\n"
-        return hash
+        return hash[0:len(hash) - 1]
 
     @property
     def width(self):
