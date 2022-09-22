@@ -19,9 +19,9 @@ class Rectangle:
         for i in range(self.height):
             for j in range(self.width):
                 if type(self.print_symbol) in [list, tuple, dict, int]:
-                    str += repr(self.print_symbol)
+                    hash += repr(self.print_symbol)
                 else:
-                    str += self.print_symbol
+                    hash += self.print_symbol
             hash += "\n"
         return hash[0:len(hash) - 1]
 
