@@ -21,7 +21,7 @@ class Rectangle:
                 if type(self.print_symbol) in [list, tuple, dict, int]:
                     str += repr(self.print_symbol)
                 else:
-                    str += str.print_symbol
+                    str += self.print_symbol
             hash += "\n"
         return hash[0:len(hash) - 1]
 
