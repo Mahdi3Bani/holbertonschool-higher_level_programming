@@ -12,11 +12,11 @@ class Rectangle:
     def __str__(self):
         if self.width == 0 or self.height == 0:
             return 0
-        hash = ''
+        hash = ""
         for i in range(self.height):
             for j in range(self.width):
-                hash = '#'
-            hash = '\n'
+                hash = hash + "#"
+            hash = "\n"
         return hash
 
     @property
