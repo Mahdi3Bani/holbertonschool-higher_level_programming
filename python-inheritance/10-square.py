@@ -18,7 +18,3 @@ class Square(Rectangle):
     def area(self):
         """Intialize a new instance from Square"""
         return self.__size ** 2
-
-    def __str__(self):
-        """"print"""
-        return str("[Rectangle] {}/{}".format(self.__width, self.__height))
