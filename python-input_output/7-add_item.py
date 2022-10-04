@@ -10,5 +10,5 @@ open("add_item.json", 'a')
 try:
     a = load_from_json_file("add_item.json")
 except ValueError:
-    l = []
+    a = []
 save_to_json_file(l + sys.argv[1:], "add_item.json")
