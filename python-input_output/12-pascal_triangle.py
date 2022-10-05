@@ -3,16 +3,14 @@
 
 
 def pascal_triangle(n):
-    """"returns a list of lists of integers representing the Pascal’s triangle of n"""
+    """"returns a list of lists of integers representing the Pascals triangle of n"""
     lisst = []
     if n <= 0:
         return lisst
-    else:
-        for i in range(n):
-            lisst += []
-            for j in range(i + 1):
-                if i > 1 and j < 1 and j != 0:
-                    lisst += lisst[i-1][j] + lisst[i-1][j-1]
-                elif j != n:
-                    lisst[i] += [1]
+    if n == 1:
+        return [[1]]
+
+    lisst = [[1]]
+    for i in range(n-1):
+        lisst.append([a+b for a, b in zip([0] + lisst[-1], lisst[-1] + [0])])
     return lisst
