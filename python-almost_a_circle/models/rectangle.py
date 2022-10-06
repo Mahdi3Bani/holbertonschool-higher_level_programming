@@ -89,7 +89,7 @@ class Rectangle(Base):
         """"assigns an argument to each attribute"""
 
         up = ["id", "width", "height", "x", "y"]
-        if len(args) != 0:
+        if (args):
             for i in range(len(args)):
                 setattr(self, up[i], args[i])
 
