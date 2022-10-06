@@ -95,4 +95,4 @@ class Rectangle(Base):
 
         else:
             for k in kwargs:
-                setattr(self, up[i], args[i])
+                setattr(self, k, kwargs[k])
