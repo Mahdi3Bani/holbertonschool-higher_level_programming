@@ -37,4 +37,3 @@ class Base:
                 for i in list_objs:
                     obj.append(i.to_dictionary())
                 f.write(cls.to_json_string(obj))
-
