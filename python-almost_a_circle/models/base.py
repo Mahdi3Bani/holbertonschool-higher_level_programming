@@ -30,7 +30,7 @@ class Base:
     def save_to_file(cls, list_objs):
         ''''save to file'''
         obj = []
-        with open(cls.__name__ + ".json", "w") as f:
+        with open(cls.__name__ + ".json", 'w') as f:
             if list_objs is None or list_objs == []:
                 json.dumps(obj, f)
             else:
