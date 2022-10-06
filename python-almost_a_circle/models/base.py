@@ -54,3 +54,16 @@ class Base:
             a = cls(1, 0, 0)
         a.update(**dictionary)
         return a
+
+    @classmethod
+    def create(cls, **dictionary):
+        """"function"""
+
+        if cls.__name__ == "Rectangle":
+            dummy = cls(1, 1)
+
+        else:
+            dummy = cls(1)
+
+        dummy.update(**dictionary)
+        return (dummy)
