@@ -47,4 +47,3 @@ class Square(Rectangle):
         """"class to dict"""
         return {'x': self.x, 'y': self.y, 'id': self.id,
                 'size': self.size}
-
