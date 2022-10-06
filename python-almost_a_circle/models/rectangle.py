@@ -74,5 +74,5 @@ class Rectangle(Base):
         for i in range(self.__height):
             for j in range(self.__width + self.__x):
                 if j < self.__x:
-                    print(" ", end="")
+                    print("#", end="")
             print()
