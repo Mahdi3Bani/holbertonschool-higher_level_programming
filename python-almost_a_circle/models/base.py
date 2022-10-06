@@ -48,15 +48,6 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        if cls.__name__ == "Rectangle":
-            a = cls(1, 1, 0, 0)
-        elif cls.__name__ == "Square":
-            a = cls(1, 0, 0)
-        a.update(**dictionary)
-        return a
-
-    @classmethod
-    def create(cls, **dictionary):
         """"function"""
 
         if cls.__name__ == "Rectangle":
@@ -67,3 +58,14 @@ class Base:
 
         dummy.update(**dictionary)
         return (dummy)
+
+    @classmethod
+    def load_from_file(cls):
+        """function"""
+
+        try:
+            with open(cls.__name__ + ".json", "r") as f:
+                list = cls.from_json_string(f.read())
+                return [cls.create(**dic) for dic in list]
+        except FileNotFoundError:
+            return []
