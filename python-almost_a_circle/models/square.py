@@ -30,3 +30,15 @@ class Square(Rectangle):
         """print the str of Rectangle"""
         return "[Square] ({}) {}/{} - {}".format(
             self.id, self.x, self.y, self.width)
+
+    def update(self, *args, **kwargs):
+        """"assigns an argument to each attribute"""
+
+        up = ["id", "width", "height", "x", "y"]
+        if (args):
+            for i in range(len(args)):
+                setattr(self, up[i], args[i])
+
+        else:
+            for k in kwargs:
+                setattr(self, k, kwargs[k])
