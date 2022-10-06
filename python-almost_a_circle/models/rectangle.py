@@ -91,4 +91,4 @@ class Rectangle(Base):
         up = ["id", "width", "height", "x", "y"]
         if len(args) != 0:
             for i in range(args):
-                setattr(self, up)
+                setattr(self, up, args[i])
