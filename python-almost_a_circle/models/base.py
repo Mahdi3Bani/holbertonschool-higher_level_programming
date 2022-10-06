@@ -31,7 +31,7 @@ class Base:
         ''''save to file'''
         obj = []
         with open(cls.__name__ + ".json", 'w') as f:
-            if list_objs is None or list_objs == []:
+            if list_objs is None:
                 json.dumps(obj, f)
             else:
                 for i in list_objs:
