@@ -5,6 +5,6 @@ FROM cities
 WHERE state_id = (
         SELECT id
         FROM states
-        where name = 'california'
+        WHERE name = 'california'
     )
 ORDER BY id ASC
