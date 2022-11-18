@@ -12,6 +12,6 @@ if __name__ == "__main__":
 
     for r in result:
         print(r)
-    
+
     cursor.close()
     db.close()
