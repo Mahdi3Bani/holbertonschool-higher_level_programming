@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-list all tates with name starting with N
+list all tates with name
+
 """
 
 from sys import argv
