@@ -19,7 +19,7 @@ if __name__ == "__main__":
         JOIN states
         ON states.id = cities.state_id
         WHERE states.name = %s
-        ORDER BY cities.id""",(argv[4],))
+        ORDER BY cities.id""", (argv[4],))
     result = c.fetchall()
 
     tab = []
@@ -27,7 +27,8 @@ if __name__ == "__main__":
         tab.append(r[0])
         tab.append(', ')
     for i in range(len(tab) - 1):
-        print (tab[i], end ="")
+        print(tab[i], end="")
+    print('')
 
     c.close()
     db.close()
