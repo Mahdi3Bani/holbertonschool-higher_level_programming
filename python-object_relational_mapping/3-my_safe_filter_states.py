@@ -16,7 +16,7 @@ if __name__ == "__main__":
     c = db.cursor()
     c.execute(
         "SELECT * FROM states WHERE name LIKE  = %s ORDER BY id"
-        ,(argv[4]))
+        ,(argv[4],))
     result = c.fetchall()
 
     for r in result:
