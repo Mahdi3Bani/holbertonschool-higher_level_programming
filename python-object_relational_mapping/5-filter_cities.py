@@ -22,8 +22,11 @@ if __name__ == "__main__":
         ORDER BY cities.id""",(argv[4],))
     result = c.fetchall()
 
+    tab = []
     for r in result:
-        print(r)
+        tab.append(r[0])
+        tab.append(', ')
+    print(tab[:len(tab) - 2])
 
     c.close()
     db.close()
