@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     c = db.cursor()
     c.execute(
-        "SELECT * FROM states WHERE name=%s ORDER BY id"
+        "SELECT * FROM states WHERE name=%s ORDER BY id",
         (argv[4], ))
     result = c.fetchall()
 
