@@ -2,7 +2,6 @@
 
 """
 listing by cities name
-
 """
 
 
