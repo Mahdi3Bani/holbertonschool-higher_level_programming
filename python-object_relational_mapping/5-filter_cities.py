@@ -26,8 +26,8 @@ if __name__ == "__main__":
     for r in result:
         tab.append(r[0])
         tab.append(', ')
-    for i in range(len(tab)):
-        print (tab[i])
+    for i in range(len(tab) - 1):
+        print (tab[i], end ="")
 
     c.close()
     db.close()
