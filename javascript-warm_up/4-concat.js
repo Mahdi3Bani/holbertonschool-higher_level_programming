@@ -2,6 +2,6 @@
 const process = require('process');
 const args = process.argv;
 
-const concat = args[2] + 'is' + args[3];
+const concat = args[2] + ' is ' + args[3];
 
 console.log(concat);
