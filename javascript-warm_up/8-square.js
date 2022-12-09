@@ -4,9 +4,11 @@ const args = process.argv;
 if (isNaN(args[2])) {
   console.log('Missing size');
 } else {
+  let square = '';
+  for (let j = 0; j < i; j++) {
+    square = square + 'X';
+  }
   for (let i = 0; i < args[2]; i++) {
-    for (let j = 0; j < i; j++) {
-      console.log('X');
-    }
+    console.log(square);
   }
 }
