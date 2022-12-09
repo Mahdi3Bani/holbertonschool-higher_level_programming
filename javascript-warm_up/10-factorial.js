@@ -9,7 +9,7 @@ function fact (a) {
 const process = require('process');
 const args = process.argv;
 if (isNaN(args[2])) {
-  console.log('NaN');
+  console.log('1');
 } else {
   const fac = args[2];
   console.log(fact(fac));
