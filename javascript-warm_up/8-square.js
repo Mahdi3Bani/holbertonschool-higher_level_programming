@@ -5,7 +5,7 @@ if (isNaN(args[2])) {
   console.log('Missing size');
 } else {
   let square = '';
-  for (let j = 0; j < i; j++) {
+  for (let j = 0; j < args[2]; j++) {
     square = square + 'X';
   }
   for (let i = 0; i < args[2]; i++) {
