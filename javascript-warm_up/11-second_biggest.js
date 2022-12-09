@@ -3,7 +3,7 @@
 const process = require('process');
 const args = process.argv;
 if (isNaN(args[2])) {
-  console.log('1');
+  console.log('0');
 } else {
   let a = 0;
   for (let i = 2; i < args.length; i++) {
@@ -13,7 +13,7 @@ if (isNaN(args[2])) {
   }
   let b = 0;
   for (let j = 2; j < args.length; j++) {
-    if (parseInt(args[j]) > b || parseInt(args[j]) < a) {
+    if (parseInt(args[j]) > b && parseInt(args[j]) < a) {
       b = args[j];
     }
   }
