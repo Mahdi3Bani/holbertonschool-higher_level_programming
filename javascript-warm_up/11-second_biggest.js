@@ -2,7 +2,7 @@
 
 const process = require('process');
 const args = process.argv;
-if (isNaN(args[2])) {
+if (isNaN(args[2]) || isNaN(args[3])) {
   console.log('0');
 } else {
   const array = args.map(Number);
