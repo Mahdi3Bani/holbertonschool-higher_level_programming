@@ -7,7 +7,7 @@ if (isNaN(args[2])) {
 } else {
   let a = 0;
   for (let i = 2; i < args.length; i++) {
-    if (a < parseInt(args[i])) {
+    if (a > parseInt(args[i])) {
       a = args[i];
     }
   }
