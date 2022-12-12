@@ -8,7 +8,7 @@ class Square extends Rectangle {
   charPrint (c = 'X') {
     let square = '';
     for (let j = 0; j < this.width; j++) {
-      square = square + 'X';
+      square = square + c;
     }
     for (let i = 0; i < this.height; i++) {
       console.log(square);
