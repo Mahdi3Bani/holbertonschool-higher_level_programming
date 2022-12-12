@@ -9,10 +9,10 @@ module.exports = class Rectangle {
 
   print () {
     let square = '';
-    for (let j = 0; j < this.height; j++) {
+    for (let j = 0; j < this.width; j++) {
       square = square + 'X';
     }
-    for (let i = 0; i < this.width; i++) {
+    for (let i = 0; i < this.height; i++) {
       console.log(square);
     }
   }
