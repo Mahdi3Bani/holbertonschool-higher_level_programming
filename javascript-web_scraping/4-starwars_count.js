@@ -1,15 +1,14 @@
 #!/usr/bin/node
-let movies;
-let charac;
-let i = 0;
+
 const request = require('request');
 request(process.argv[2], function (error, response, body) {
   if (error) throw error;
-  const content = JSON.parse(body);
-
-  for (movies in content.results) {
-    for (charac in content.results[movies].characters) {
-      if (content.results[movies].characters[charac] === 'https://swapi-api.hbtn.io/api/films/18') {
+  const content = JSON.parse(body).results;
+  let i = 0;
+  for (const movies in content) {
+    const charac = content[movies].characters;
+    for (const char in charac) {
+      if (charac[char].endsWith('/18/')) {
         i++;
       }
     }
