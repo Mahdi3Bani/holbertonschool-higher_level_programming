@@ -9,7 +9,7 @@ request(process.argv[2], function (error, response, body) {
 
   for (movies in content.results) {
     for (charac in content.results[movies].characters) {
-      if (content.results[movies].characters[charac] === 'https://swapi-api.hbtn.io/api/people/18/') {
+      if (content.results[movies].characters[charac] === 'https://swapi-api.hbtn.io/api/films/18') {
         i++;
       }
     }
